@@ -1,0 +1,109 @@
+<include file="Public/header"/>
+<link rel="stylesheet" href="__PUBLIC__/css/uploadify.css">
+<script type="text/javascript" src="__PUBLIC__/js/jquery.uploadify.min.js"></script>
+<body>
+<div class="panel admin-panel">
+  <div class="panel-head"><strong><span class="icon-pencil-square-o"></span> 商品分类</strong></div>
+  <div class="body-content">
+    <form method="post" class="form-x" action="/Admin/Mui/info1">
+    <!-- <div class="field">
+          <dl name="brand_id" id="brand_id" class="input" style="width:200px;line-height:17px;">
+				<foreach name="brandlist" key="k" item="row">
+					<dt id="a" name="a" value="{$row['id']}">{$row['name']}
+						<dl name="cat_id" id="cat_id" class="input" style="width:200px;line-height:17px;">
+							<foreach name="catlist" key="k" item="row">
+								<dt value="{$row['id']}">{$row['name']}
+									<dl name="attr_id" id="attr_id" class="input" style="width:200px;line-height:17px;">
+										<foreach name="attrlist" key="k" item="row">
+											<dt value="{$row['id']}">{$row['name']}</dt>
+										</foreach>
+									</dl>
+								</dt>
+							</foreach>
+						</dl>
+					</dt>
+				</foreach>
+			</dl>
+          <div class="tips"></div>
+        </div>
+		
+		
+      <div class="form-group">
+        <div class="label">
+          <label>品牌ID：</label>
+        </div>
+        <div class="field">
+			<select name="brand_id" id="brand_id" class="input" style="width:200px;line-height:17px;">
+				<option value="">请选择品牌</option>
+				<foreach name="brandlist" key="k" item="row">
+					<option value="{$row['id']}">{$row['name']}</option>
+				</foreach>
+			</select>
+          <!--<input type="text" class="input" name="sentitle" value="" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>分类ID：</label>
+        </div>
+        <div class="field">
+          <select name="cat_id" id="cat_id" class="input" style="width:200px;line-height:17px;">
+				<option value="">请选择分类</option>
+				<foreach name="catlist" key="k" item="row">
+					<option value="{$row['id']}">{$row['name']}</option>
+				</foreach>
+			</select>
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>属性ID：</label>
+        </div>
+        <div class="field">
+          <select name="attr_id" id="attr_id" class="input" style="width:200px;line-height:17px;">
+				<option value="">请选择品牌</option>
+				<foreach name="attrlist" key="k" item="row">
+					<option value="{$row['id']}">{$row['name']}</option>
+				</foreach>
+			</select>
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+        </div>
+      </div>-->
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		$('#name').blur(function(){
+			var name = $(this).val();
+			var reqdata = {name:name};
+			$.post("/Admin/Mui/checkname",reqdata,function(jsonobj){
+				$('#name').after('<div class="input-help" id="aa" style="display:block;"><ul><li style="color:#e33;">'+jsonobj.msg+'</li></ul></div>');
+			},'json');
+		});
+		$('#name').focus(function(){
+			$('#aa').css('display','none');
+		});
+		$('#file_upload').uploadify({
+			'swf'      : '__PUBLIC__/swf/uploadify.swf',
+			'uploader' : '/Admin/upload/uploadify',
+			'buttonText' : '商品图片',
+			'onUploadSuccess' : function(file, data, response) {
+				$('#image').attr('src','/Uploads/'+data);
+				$('#img_url').val(data);
+			},
+		});
+	});
+</script>
+</body>
+</html>

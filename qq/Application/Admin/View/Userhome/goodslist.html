@@ -1,0 +1,111 @@
+<include file="Public/header"/>
+<body>
+<form method="post" action="">
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 商品列表</strong></div>
+    <div class="padding border-bottom">
+      <ul class="search">
+        <li>
+          <button type="button"  class="button border-green" id="checkall"><span class="icon-check"></span> 全选</button>
+          <button type="submit" class="button border-red"><span class="icon-trash-o"></span> 批量删除</button>
+        </li>
+      </ul>
+    </div>
+    <table class="table table-hover text-center">
+      <tr>
+        <th width="120">ID</th>
+        <th>商品名称</th>       
+        <th>商品品牌</th>       
+        <th>商品分类</th>       
+        <th>商品属性</th>      
+        <th>商品图片</th>    
+        <th>商品描述</th>    
+        <th>库存</th>    
+        <th>是否上架</th>    
+        <th>是否推荐</th>    
+        <th>操作</th>    
+      </tr> 
+		<volist name="tref" id="ptt">
+			<tr align="center" valign="middle">
+				<td name="ptti" id="ptti">{$ptt.id}</td>
+				<td>{$ptt.name}</td>
+				<td>{$ptt.brand_name}</td>
+				<td>{$ptt.cat_name}</td>
+				<td>{$ptt.attr_name}</td>
+				<td>{$ptt.price}</td>
+				<td><img src="/Uploads/{$ptt.img_url}" width="50px" height="50px"/></td>
+				<td>{$ptt.kucun}</td>
+				<td>{$ptt.status}</td>
+				<td>{$ptt.hot}</td>
+				<td>
+					<a class="button border-blue" href="{:U('/Admin/Userhome/imgadd/imgid/'.$ptt['id'])}" target="right"><span class="icon-trash-o"></span>添加相册</a> 
+				</td>
+			</tr>
+		</volist> 
+	<div class="form-group">
+        <div class="label">
+          <label for="sitename">提示信息：</label>
+        </div>
+        <div class="field">
+          <label id="msg" style="line-height:33px;">
+          
+          </label>
+        </div>
+    </div>
+	
+      <tr>
+        <td colspan="8"><div class="pagelist">{$pagestr}</div></td>
+      </tr>
+    </table>
+  </div>
+</form>
+
+<script type="text/javascript">
+$('.cart').click(function(){
+	var reqdata = {gid:$(this).data("gid"),gnum:1};
+	$.post("{:U('/Admin/Mui/addcart')}",reqdata,function(jsonobj){
+		$('#msg').text(jsonobj.msg);
+	},'json');
+});
+function formSubmit(){
+	var url = "/Admin/Mui/index/name"+document.getElementById('ge').value;
+	document.form1.action = url;
+	document.form1.submit();
+}
+	
+function del(id){
+	if(confirm("您确定要删除吗?")){
+		
+	}
+}
+
+$("#checkall").click(function(){ 
+  $("input[name='id[]']").each(function(){
+	  if (this.checked) {
+		  this.checked = false;
+	  }
+	  else {
+		  this.checked = true;
+	  }
+  });
+})
+
+function DelSelect(){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		var t=confirm("您确认要删除选中的内容吗？");
+		if (t==false) return false; 		
+	}
+	else{
+		alert("请选择您要删除的内容!");
+		return false;
+	}
+}
+
+</script>
+</body></html>

@@ -1,0 +1,1376 @@
+[ 2016-11-22T20:55:50+08:00 ] ::1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.045735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018049s ]
+SQL: SHOW COLUMNS FROM `my_goods` [ RunTime:0.0534s ]
+SQL: SELECT * FROM `my_goods`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `my_goods_cat` [ RunTime:0.0409s ]
+SQL: SELECT * FROM `my_goods_cat` WHERE ( pid=0 )  [ RunTime:0.0183s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.012494s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.012622s ]
+NOTIC: [8] Undefined index: username D:\wamp\www\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 79 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.032551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.032663s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006286s ]
+
+[ 2016-11-22T20:56:07+08:00 ] ::1 /Home/Index/flow1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0774s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT my_goods_cart.*,my_goods.miaoshu,my_goods_attr.attr_name FROM `my_goods_cart` left JOIN my_goods on my_goods_cart.goods_id = my_goods.id left JOIN my_goods_attr on my_goods_cart.attr_id = my_goods_attr.id  WHERE ( my_goods_cart.del=0 and my_goods_cart.userid= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT my_goods_cart.*,my_goods.miaoshu,my_goods_attr.attr_name FROM `my_goods_cart` left JOIN my_goods on my_goods_cart.goods_id = my_goods.id left JOIN my_goods_attr on my_goods_cart.attr_id = my_goods_attr.id  WHERE ( my_goods_cart.del=0 and my_goods_cart.userid= ) 
+
+[ 2016-11-22T20:56:16+08:00 ] ::1 /Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2016-11-22T20:57:02+08:00 ] ::1 /index.php/home/user/addlogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+SQL: SHOW COLUMNS FROM `my_user` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `my_user` WHERE `name` = '陌陌' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2016-11-22T20:57:05+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `my_goods` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `my_goods`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_goods_cat` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `my_goods_cat` WHERE ( pid=0 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2016-11-22T20:57:09+08:00 ] ::1 /Home/Index/flow1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0033s ]
+SQL: SELECT my_goods_cart.*,my_goods.miaoshu,my_goods_attr.attr_name FROM `my_goods_cart` left JOIN my_goods on my_goods_cart.goods_id = my_goods.id left JOIN my_goods_attr on my_goods_cart.attr_id = my_goods_attr.id  WHERE ( my_goods_cart.del=0 and my_goods_cart.userid=1 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2016-11-22T20:57:15+08:00 ] ::1 /index.php/Home/Index/upstatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: UPDATE `my_goods_cart` SET `status`='0' WHERE ( id=1 ) [ RunTime:0.1007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001242s ]
+
+[ 2016-11-22T20:57:16+08:00 ] ::1 /Home/Index/flow2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0088s ]
+SQL: SELECT my_goods_cart.*,my_goods.miaoshu,my_goods_attr.attr_name FROM `my_goods_cart` left JOIN my_goods on my_goods_cart.goods_id = my_goods.id left JOIN my_goods_attr on my_goods_cart.attr_id = my_goods_attr.id  WHERE ( my_goods_cart.status=1 and my_goods_cart.userid=1 )  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: result D:\wamp\www\Application\Home\Controller\IndexController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2016-11-22T20:57:18+08:00 ] ::1 /index.php/Home/Index/flow3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0037s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122205716725') [ RunTime:0.1110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2016-11-22T20:57:27+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0092s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122205716725') [ RunTime:0.1442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001391s ]
+
+[ 2016-11-22T21:02:32+08:00 ] ::1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `my_goods` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `my_goods`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_goods_cat` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `my_goods_cat` WHERE ( pid=0 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2016-11-22T21:02:38+08:00 ] ::1 /Home/Index/flow1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0053s ]
+SQL: SELECT my_goods_cart.*,my_goods.miaoshu,my_goods_attr.attr_name FROM `my_goods_cart` left JOIN my_goods on my_goods_cart.goods_id = my_goods.id left JOIN my_goods_attr on my_goods_cart.attr_id = my_goods_attr.id  WHERE ( my_goods_cart.del=0 and my_goods_cart.userid=1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2016-11-22T21:02:42+08:00 ] ::1 /index.php/Home/Index/upstatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `my_goods_cart` SET `status`='1' WHERE ( id=2 ) [ RunTime:0.0993s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001847s ]
+
+[ 2016-11-22T21:02:43+08:00 ] ::1 /index.php/Home/Index/upstatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: UPDATE `my_goods_cart` SET `status`='1' WHERE ( id=3 ) [ RunTime:0.1452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002482s ]
+
+[ 2016-11-22T21:02:44+08:00 ] ::1 /Home/Index/flow2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0051s ]
+SQL: SELECT my_goods_cart.*,my_goods.miaoshu,my_goods_attr.attr_name FROM `my_goods_cart` left JOIN my_goods on my_goods_cart.goods_id = my_goods.id left JOIN my_goods_attr on my_goods_cart.attr_id = my_goods_attr.id  WHERE ( my_goods_cart.status=1 and my_goods_cart.userid=1 and my_goods_cart.del=0 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: result D:\wamp\www\Application\Home\Controller\IndexController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2016-11-22T21:02:45+08:00 ] ::1 /index.php/Home/Index/flow3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001973s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0040s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210244876') [ RunTime:0.1070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001376s ]
+
+[ 2016-11-22T21:02:59+08:00 ] ::1 /Home/Index/flow2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0083s ]
+SQL: SELECT my_goods_cart.*,my_goods.miaoshu,my_goods_attr.attr_name FROM `my_goods_cart` left JOIN my_goods on my_goods_cart.goods_id = my_goods.id left JOIN my_goods_attr on my_goods_cart.attr_id = my_goods_attr.id  WHERE ( my_goods_cart.status=1 and my_goods_cart.userid=1 and my_goods_cart.del=0 )  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: result D:\wamp\www\Application\Home\Controller\IndexController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002213s ]
+
+[ 2016-11-22T21:03:00+08:00 ] ::1 /index.php/Home/Index/flow3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002140s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0041s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.1059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000418s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001637s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002735s ]
+
+[ 2016-11-22T21:03:02+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0083s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.1241s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000440s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002311s ]
+
+[ 2016-11-22T21:04:37+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0041s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.1116s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001169s ]
+
+[ 2016-11-22T21:04:39+08:00 ] ::1 /Home/Jiang/jiang
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+ERR: 无法加载控制器:Jiang
+
+[ 2016-11-22T22:49:09+08:00 ] ::1 /Home/Jiang/jiang
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001545s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined variable: tpshop_config D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 6 行.
+NOTIC: [8] Undefined variable: tpshop_config D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 7 行.
+NOTIC: [8] Undefined variable: tpshop_config D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 8 行.
+NOTIC: [8] Undefined variable: navigate_user D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 20 行.
+NOTIC: [8] Undefined variable: user D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 37 行.
+NOTIC: [8] Undefined variable: user D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 46 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 90 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2016-11-22T22:49:15+08:00 ] ::1 /index.php/Home/User/prize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 非法操作:prize
+
+[ 2016-11-22T22:51:21+08:00 ] ::1 /Home/Jiang/jiang
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001314s ]
+SQL: SHOW COLUMNS FROM `my_userprize` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `my_userprize`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined variable: tpshop_config D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 6 行.
+NOTIC: [8] Undefined variable: tpshop_config D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 7 行.
+NOTIC: [8] Undefined variable: tpshop_config D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 8 行.
+NOTIC: [8] Undefined variable: navigate_user D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 20 行.
+NOTIC: [8] Undefined variable: user D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 37 行.
+NOTIC: [8] Undefined variable: user D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 46 行.
+NOTIC: [8] Use of undefined constant user_money - assumed 'user_money' D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 96 行.
+NOTIC: [8] Undefined index: user_money D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 96 行.
+NOTIC: [8] Use of undefined constant pay_points - assumed 'pay_points' D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 102 行.
+NOTIC: [8] Undefined index: pay_points D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 102 行.
+NOTIC: [8] Undefined index: jiang_shuoming D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 107 行.
+NOTIC: [8] Use of undefined constant user_money - assumed 'user_money' D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 96 行.
+NOTIC: [8] Undefined index: user_money D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 96 行.
+NOTIC: [8] Use of undefined constant pay_points - assumed 'pay_points' D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 102 行.
+NOTIC: [8] Undefined index: pay_points D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 102 行.
+NOTIC: [8] Undefined index: jiang_shuoming D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 107 行.
+NOTIC: [8] Use of undefined constant user_money - assumed 'user_money' D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 96 行.
+NOTIC: [8] Undefined index: user_money D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 96 行.
+NOTIC: [8] Use of undefined constant pay_points - assumed 'pay_points' D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 102 行.
+NOTIC: [8] Undefined index: pay_points D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 102 行.
+NOTIC: [8] Undefined index: jiang_shuoming D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 107 行.
+NOTIC: [8] Use of undefined constant user_money - assumed 'user_money' D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 96 行.
+NOTIC: [8] Undefined index: user_money D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 96 行.
+NOTIC: [8] Use of undefined constant pay_points - assumed 'pay_points' D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 102 行.
+NOTIC: [8] Undefined index: pay_points D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 102 行.
+NOTIC: [8] Undefined index: jiang_shuoming D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 107 行.
+NOTIC: [8] Use of undefined constant user_money - assumed 'user_money' D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 96 行.
+NOTIC: [8] Undefined index: user_money D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 96 行.
+NOTIC: [8] Use of undefined constant pay_points - assumed 'pay_points' D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 102 行.
+NOTIC: [8] Undefined index: pay_points D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 102 行.
+NOTIC: [8] Undefined index: jiang_shuoming D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 107 行.
+NOTIC: [8] Use of undefined constant user_money - assumed 'user_money' D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 96 行.
+NOTIC: [8] Undefined index: user_money D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 96 行.
+NOTIC: [8] Use of undefined constant pay_points - assumed 'pay_points' D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 102 行.
+NOTIC: [8] Undefined index: pay_points D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 102 行.
+NOTIC: [8] Undefined index: jiang_shuoming D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 107 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\Application\Runtime\Cache\Home\67778f645a99bec6e59846d143578183.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2016-11-22T22:51:22+08:00 ] ::1 /index.php/Home/Jiang/prize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2016-11-22T22:51:27+08:00 ] ::1 /index.php/Home/Jiang/prize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2016-11-22T22:51:30+08:00 ] ::1 /index.php/home/user/jiangpin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+ERR: 非法操作:jiangpin
+
+[ 2016-11-22T22:51:30+08:00 ] ::1 /index.php/home/user/jiangpin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+ERR: 非法操作:jiangpin
+
+[ 2016-11-22T23:02:30+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0043s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.1252s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2016-11-22T23:02:33+08:00 ] ::1 /Home/Jiang/jiang
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `my_userprize` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `my_userprize`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2016-11-22T23:02:33+08:00 ] ::1 /Home/Jiang/images/arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+
+[ 2016-11-22T23:02:33+08:00 ] ::1 /Home/Jiang/images/bg11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-11-22T23:02:33+08:00 ] ::1 /Home/Jiang/images/user.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+
+[ 2016-11-22T23:03:33+08:00 ] ::1 /Home/Jiang/jiang
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+SQL: SHOW COLUMNS FROM `my_userprize` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `my_userprize`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2016-11-22T23:22:45+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0045s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.0940s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+
+[ 2016-11-22T23:23:04+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0046s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.0974s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001998s ]
+
+[ 2016-11-22T23:23:31+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0051s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.0995s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001954s ]
+
+[ 2016-11-22T23:24:32+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0079s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.1029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001764s ]
+
+[ 2016-11-22T23:28:25+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0079s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.1191s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000927s ]
+
+[ 2016-11-22T23:28:28+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0078s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.1130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001429s ]
+
+[ 2016-11-22T23:29:56+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0071s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.1023s ]
+SQL: SELECT * FROM `my_goods_dingdan` WHERE ( dingdan=20161122210259672 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Undefined variable: order_id D:\wamp\www\Application\Runtime\Cache\Home\3368eda364c6339a54a6d85ca69d51ed.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002196s ]
+
+[ 2016-11-22T23:30:23+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0047s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.1055s ]
+SQL: SELECT * FROM `my_goods_dingdan` WHERE ( dingdan=20161122210259672 ) LIMIT 1   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000354s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000914s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\Application\Runtime\Cache\Home\3368eda364c6339a54a6d85ca69d51ed.php 第 62 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\Application\Runtime\Cache\Home\3368eda364c6339a54a6d85ca69d51ed.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002244s ]
+
+[ 2016-11-22T23:30:56+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0045s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.0941s ]
+SQL: SELECT * FROM `my_goods_dingdan` WHERE ( dingdan=20161122210259672 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+
+[ 2016-11-22T23:31:23+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0044s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.0940s ]
+SQL: SELECT * FROM `my_goods_dingdan` WHERE ( dingdan=20161122210259672 ) LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+
+[ 2016-11-22T23:31:53+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0050s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.1158s ]
+SQL: SELECT * FROM `my_goods_dingdan` WHERE ( dingdan=20161122210259672 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2016-11-22T23:34:22+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0052s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.0950s ]
+SQL: SELECT * FROM `my_goods_dingdan` WHERE ( dingdan=20161122210259672 ) LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2016-11-22T23:52:16+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0110s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122210259672') [ RunTime:0.0937s ]
+SQL: SELECT * FROM `my_goods_dingdan` WHERE ( dingdan=20161122210259672 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2016-11-22T23:52:18+08:00 ] ::1 /index.php/Home/Jiang/jiang/id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `my_goods_dingdan` WHERE `id` = 6 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-11-22T23:52:22+08:00 ] ::1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+SQL: SHOW COLUMNS FROM `my_goods` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `my_goods`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_goods_cat` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `my_goods_cat` WHERE ( pid=0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2016-11-22T23:53:56+08:00 ] ::1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `my_goods` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `my_goods`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_goods_cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `my_goods_cat` WHERE ( pid=0 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+NOTIC: [8] Undefined index: username D:\wamp\www\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 27 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 79 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2016-11-22T23:53:58+08:00 ] ::1 /Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000998s ]
+
+[ 2016-11-22T23:54:07+08:00 ] ::1 /index.php/home/user/addlogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `my_user` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `my_user` WHERE `name` = '陌陌' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2016-11-22T23:54:10+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `my_goods` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `my_goods`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_goods_cat` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `my_goods_cat` WHERE ( pid=0 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2016-11-22T23:54:13+08:00 ] ::1 /Home/Index/flow1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0062s ]
+SQL: SELECT my_goods_cart.*,my_goods.miaoshu,my_goods_attr.attr_name FROM `my_goods_cart` left JOIN my_goods on my_goods_cart.goods_id = my_goods.id left JOIN my_goods_attr on my_goods_cart.attr_id = my_goods_attr.id  WHERE ( my_goods_cart.del=0 and my_goods_cart.userid=1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2016-11-22T23:54:16+08:00 ] ::1 /index.php/Home/Index/upstatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `my_goods_cart` SET `status`='1' WHERE ( id=2 ) [ RunTime:0.1513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2016-11-22T23:54:17+08:00 ] ::1 /Home/Index/flow2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0043s ]
+SQL: SELECT my_goods_cart.*,my_goods.miaoshu,my_goods_attr.attr_name FROM `my_goods_cart` left JOIN my_goods on my_goods_cart.goods_id = my_goods.id left JOIN my_goods_attr on my_goods_cart.attr_id = my_goods_attr.id  WHERE ( my_goods_cart.status=1 and my_goods_cart.userid=1 and my_goods_cart.del=0 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: result D:\wamp\www\Application\Home\Controller\IndexController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2016-11-22T23:54:19+08:00 ] ::1 /index.php/Home/Index/flow3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0048s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122235417365') [ RunTime:0.1051s ]
+SQL: SELECT * FROM `my_goods_dingdan` WHERE ( dingdan=20161122235417365 ) LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000479s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002326s ]
+
+[ 2016-11-22T23:54:20+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0052s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`) VALUES ('1','20161122235417365') [ RunTime:0.0985s ]
+SQL: SELECT * FROM `my_goods_dingdan` WHERE ( dingdan=20161122235417365 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000468s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001941s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002768s ]
+
+[ 2016-11-22T23:54:23+08:00 ] ::1 /index.php/Home/Jiang/jiang/id/23.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `my_goods_dingdan` WHERE `id` = 23 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-11-22T23:54:27+08:00 ] ::1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `my_goods` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `my_goods`  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `my_goods_cat` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `my_goods_cat` WHERE ( pid=0 )  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2016-11-22T23:55:46+08:00 ] ::1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `my_goods` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `my_goods`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_goods_cat` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `my_goods_cat` WHERE ( pid=0 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000969s ]
+
+[ 2016-11-22T23:55:48+08:00 ] ::1 /Home/Index/flow1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0058s ]
+SQL: SELECT my_goods_cart.*,my_goods.miaoshu,my_goods_attr.attr_name FROM `my_goods_cart` left JOIN my_goods on my_goods_cart.goods_id = my_goods.id left JOIN my_goods_attr on my_goods_cart.attr_id = my_goods_attr.id  WHERE ( my_goods_cart.del=0 and my_goods_cart.userid=1 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001170s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001265s ]
+
+[ 2016-11-22T23:55:50+08:00 ] ::1 /index.php/Home/Index/upstatus.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: UPDATE `my_goods_cart` SET `status`='1' WHERE ( id=1 ) [ RunTime:0.1041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002922s ]
+
+[ 2016-11-22T23:55:52+08:00 ] ::1 /Home/Index/flow2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0051s ]
+SQL: SELECT my_goods_cart.*,my_goods.miaoshu,my_goods_attr.attr_name FROM `my_goods_cart` left JOIN my_goods on my_goods_cart.goods_id = my_goods.id left JOIN my_goods_attr on my_goods_cart.attr_id = my_goods_attr.id  WHERE ( my_goods_cart.status=1 and my_goods_cart.userid=1 and my_goods_cart.del=0 )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: result D:\wamp\www\Application\Home\Controller\IndexController.class.php 第 100 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2016-11-22T23:55:53+08:00 ] ::1 /index.php/Home/Index/flow3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0042s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`,`user_id`) VALUES ('1','20161122235552927','1') [ RunTime:0.1000s ]
+SQL: SELECT * FROM `my_goods_dingdan` WHERE ( dingdan=20161122235552927 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2016-11-22T23:55:56+08:00 ] ::1 /Home/Index/flow3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+SQL: SHOW COLUMNS FROM `my_goods_cart` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `my_goods_cart` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0044s ]
+SQL: INSERT INTO `my_goods_dingdan` (`goods_id`,`dingdan`,`user_id`) VALUES ('1','20161122235552927','1') [ RunTime:0.1078s ]
+SQL: SELECT * FROM `my_goods_dingdan` WHERE ( dingdan=20161122235552927 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2016-11-22T23:56:01+08:00 ] ::1 /index.php/Home/Jiang/jiang/id/25.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001929s ]
+SQL: SHOW COLUMNS FROM `my_goods_dingdan` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `my_goods_dingdan` WHERE `id` = 25 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `my_userprize` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `my_userprize` WHERE `id` = 25 AND `user_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001034s ]
+

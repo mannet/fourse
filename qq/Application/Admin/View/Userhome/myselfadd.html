@@ -1,0 +1,115 @@
+<include file="Public/header"/>
+<link rel="stylesheet" href="__PUBLIC__/css/uploadify.css">
+<script type="text/javascript" src="__PUBLIC__/js/jquery.uploadify.min.js"></script>
+<body>
+<div class="panel admin-panel">
+  <div class="panel-head"><strong><span class="icon-pencil-square-o"></span> 个人信息</strong></div>
+  <div class="body-content">
+    <form method="post" class="form-x" action="/Admin/Userhome/saveself">
+	
+      <div class="form-group">
+        <div class="label">
+          <label>ID：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="id" value="{$userid.id}" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>用户名：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="name" id="name" value="{$userid.name}"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>头像：</label>
+        </div>
+        <div class="field">
+			<div class="avatar_box"> 
+				<img id="image" src="" width="130" height="130" border="0" />
+				<div class="upload_avatar"><input id="file_upload" name="file_upload" type="file" multiple="true" value="" /></div>
+				<input type="hidden" name="img_url" id="img_url" />
+			</div>
+        </div>
+      </div>
+	  <div class="form-group">
+        <div class="label">
+          <label>真实姓名：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="sname" id="sname" value="{$userid.sname}" disabled="disabled"/>
+        </div>
+      </div>
+	  <div class="form-group">
+        <div class="label"> 
+          <label>性别：</label>
+        </div>
+        <div class="field">
+          <input type='text' class='input' name='sex' id='sex' disabled='disabled' value='{$userid.sex}' />
+        </div>
+      </div>
+	  <div class="form-group">
+        <div class="label">
+          <label>生日：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="birthday" id="birthday" disabled="disabled" value="{$userid.birthday}" />
+        </div>
+      </div>
+	  <div class="form-group">
+        <div class="label">
+          <label>居住地：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="zhuzhi" id="zhuzhi" value="{$userid.zhuzhi}" />
+        </div>
+      </div>
+	  <div class="form-group">
+        <div class="label">
+          <label>家乡</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="jia" id="jia" value="{$userid.jia}" />
+        </div>
+      </div>
+	 
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit"> 确定</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		$('#name').blur(function(){
+			var name = $(this).val();
+			var reqdata = {name:name};
+			$.post("/Admin/Mui/checkname",reqdata,function(jsonobj){
+				$('#name').after('<div class="input-help" id="aa" style="display:block;"><ul><li style="color:#e33;">'+jsonobj.msg+'</li></ul></div>');
+			},'json');
+		});
+		$('#name').focus(function(){
+			$('#aa').css('display','none');
+		});
+		$('#file_upload').uploadify({
+			'swf'      : '__PUBLIC__/swf/uploadify.swf',
+			'uploader' : '/Admin/upload/uploadify',
+			'buttonText' : '商品图片',
+			'onUploadSuccess' : function(file, data, response) {
+				$('#image').attr('src','/Uploads/'+data);
+				$('#img_url').val(data);
+			},
+		});
+	});
+</script>
+</body>
+</html>
